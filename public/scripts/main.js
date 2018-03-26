@@ -11,4 +11,5 @@
 
 $(document).ready(function() {
 	// TODO
+	console.log("page is loaded");
 });
