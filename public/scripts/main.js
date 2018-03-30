@@ -27,7 +27,10 @@ generateLinksFromSectionElements = function() {
 
 extractSectionInfo = function() {
 
-	// Check the name (length, spaces, etc.)
+	// Check the name (length, spaces, etc.) TODO
 
-	// see if it shouldn't have a link made.
+	// see if it shouldn't have a link made. TODO
+
+	// Add check to see if a section is empty TODO
+
 }
