@@ -10,6 +10,24 @@
  **/
 
 $(document).ready(function() {
+
+	generateLinksFromSectionElements();
+});
+
+generateLinksFromSectionElements = function() {
+
 	// TODO
 	console.log("page is loaded");
-});
+
+	// Get all the sections TODO
+
+	extractSectionInfo();
+}
+
+
+extractSectionInfo = function() {
+
+	// Check the name (length, spaces, etc.)
+
+	// see if it shouldn't have a link made.
+}
