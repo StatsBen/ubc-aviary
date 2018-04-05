@@ -7,5 +7,15 @@
  *
  **/
 
-html {}
-body {}
+
+body {
+	background: #e5e5e5;
+}
+
+div#content {
+	display: block;
+	position: relative;
+	float: none;
+	width: 90%;
+	margin: 0 5% 0 5%;
+}

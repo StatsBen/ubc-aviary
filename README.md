@@ -22,6 +22,16 @@ website, but if it doesn't please feel free to email myself (Ben Clark
 email above). If I can't answer your question, contact Corey Kelly.
 He generally knows everything about the Aviary always.
 
+## Website Overview
+
+TODO
+
+### Typography
+This site is using the 'Oxygen' font offered through Google Fonts.
+A link to this font is found in a `link` element in the site's
+`head`.
+
+
 ## Editing The Sourcecode
 
 ### Development Environment
@@ -30,9 +40,6 @@ personally love the open source IDE 'Atom' with all the community
 supported packages, but of course you're welcome to use whatever
 you'd like.
 
-### Website Overview
-
-TODO
 
 ### Adding a New Content Section
 
@@ -78,7 +85,7 @@ or in the `name` attribute of a `div` tag (e.g.
 
 Once you've found it, delete the entire `div` element containing that
 content. Make sure that the `div` tag containing the text you'd like
-to delete is deleted also. If it is not, a link to the non-existent 
+to delete is deleted also. If it is not, a link to the non-existent
 section will continue to appear at the top of the page.
 
 #### Remove a Section Checklist
