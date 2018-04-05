@@ -18,12 +18,6 @@ div#header {
 	border-radius: 5px;
 }
 
-h1#header-text{
-	width: 100%;
-	text-align: center;
-	font-weight: 900;
-}
-
 img#header-image {
 	display: block;
 	position: relative;
