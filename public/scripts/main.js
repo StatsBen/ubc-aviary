@@ -71,10 +71,10 @@ extractSectionInfo = function(section) {
 
 /* Prints snarky comments about the section titles to the console */
 runSectionTitleChecks = function(sectionInfo) {
-	var message;
+	var snarkyBoi;
 	if (sectionInfo.name.length > 10) {
-		message = 'Hm... ' + sectionInfo.name;
-		message +=  " is a pretty long name, don't you think?"
-		console.warn(message);
+		snarkyBoi = 'Hm... ' + sectionInfo.name;
+		snarkyBoi +=  " is a pretty long name, don't you think?"
+		console.warn(snarkyBoi);
 	}
 }
