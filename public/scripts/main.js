@@ -40,7 +40,20 @@ createLink = function(section) {
 	var sectionInfo = extractSectionInfo(section);
 
 	if (sectionInfo.link) {
-		console.log('werkinonit');
+
+		var linkyBoi = $('<a>', {
+			'id':    sectionInfo.id + '-link',
+			'class': 'section-link',
+			'href':  '#' + sectionInfo.id,
+			'text':  sectionInfo.name
+		});
+
+		var listyBoi = $('<li>', {
+			'id':    sectionInfo.id + '-list',
+			'class': 'section-link-list-element'
+		});
+
+		$('ul#links-list').append(listyBoi).append(linkyBoi);
 	}
 
 }
