@@ -10,27 +10,48 @@
  **/
 
 $(document).ready(function() {
-
 	generateLinksFromSectionElements();
 });
 
 generateLinksFromSectionElements = function() {
 
-	// TODO
-	console.log("page is loaded");
+	var allSections = $('div.section').each(function(index) {
+		assignUniqueID( $(this), index);
+		createLink( $(this) );
+	});
 
-	// Get all the sections TODO
+}
 
-	extractSectionInfo();
+/* Generates a unique, but readable id for each section element */
+assignUniqueID = function(section, i) {
+	var name = section.attr('name').toLowerCase().replace(' ', '-');
+	var newID = i + '-' + name;
+	section.attr('id', newID);
+}
+
+createLink = function(section) {
+
+// Check the name (length, spaces, etc.) TODO
+
+// see if it shouldn't have a link made. TODO
+
+// Add check to see if a section is empty TODO
+
+	var sectionInfo = extractSectionInfo(section);
+
+	if (sectionInfo.link) {
+		console.log('werkinonit');
+	}
+
 }
 
 
-extractSectionInfo = function() {
+extractSectionInfo = function(section) {
 
-	// Check the name (length, spaces, etc.) TODO
-
-	// see if it shouldn't have a link made. TODO
-
-	// Add check to see if a section is empty TODO
+	var sectionInfo = [];
+	sectionInfo.name = section.attr('name');
+	sectionInfo.id   = section.attr('id');
+	sectionInfo.link = (section.attr('generateLink') == 'true');
+	return(sectionInfo);
 
 }
