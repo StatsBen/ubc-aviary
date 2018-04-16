@@ -35,9 +35,10 @@ createLink = function(section) {
 
 	var sectionInfo = extractSectionInfo(section);
 
-	runSectionTitleChecks(sectionInfo);
 
 	if (sectionInfo.link && section) {
+
+		runSectionTitleChecks(sectionInfo);
 
 		var linkyBoi = $('<a>', {
 			'id':    sectionInfo.id + '-link',
@@ -66,4 +67,14 @@ extractSectionInfo = function(section) {
 	sectionInfo.content = section.text();
 	return(sectionInfo);
 
+}
+
+/* Prints snarky comments about the section titles to the console */
+runSectionTitleChecks = function(sectionInfo) {
+	var message;
+	if (sectionInfo.name.length > 10) {
+		message = 'Hm... ' + sectionInfo.name;
+		message +=  " is a pretty long name, don't you think?"
+		console.warn(message);
+	}
 }
