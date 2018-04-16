@@ -13,6 +13,7 @@ $(document).ready(function() {
 	generateLinksFromSectionElements();
 });
 
+/* high-level function coordinating the generation of the links */
 generateLinksFromSectionElements = function() {
 
 	var allSections = $('div.section').each(function(index) {
@@ -29,17 +30,14 @@ assignUniqueID = function(section, i) {
 	section.attr('id', newID);
 }
 
+/* Generates a link element for the section and appends it */
 createLink = function(section) {
-
-// Check the name (length, spaces, etc.) TODO
-
-// see if it shouldn't have a link made. TODO
-
-// Add check to see if a section is empty TODO
 
 	var sectionInfo = extractSectionInfo(section);
 
-	if (sectionInfo.link) {
+	runSectionTitleChecks(sectionInfo);
+
+	if (sectionInfo.link && section) {
 
 		var linkyBoi = $('<a>', {
 			'id':    sectionInfo.id + '-link',
@@ -58,13 +56,14 @@ createLink = function(section) {
 
 }
 
-
+/* Creates a handy lil' object with all the section's attributes */
 extractSectionInfo = function(section) {
 
 	var sectionInfo = [];
-	sectionInfo.name = section.attr('name');
-	sectionInfo.id   = section.attr('id');
-	sectionInfo.link = (section.attr('generateLink') == 'true');
+	sectionInfo.name    = section.attr('name');
+	sectionInfo.id      = section.attr('id');
+	sectionInfo.link    = (section.attr('generateLink') == 'true');
+	sectionInfo.content = section.text();
 	return(sectionInfo);
 
 }
