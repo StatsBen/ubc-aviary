@@ -48,8 +48,10 @@ createLink = function(section) {
 
 		linkyBoi.click( function(){
 			var offset = $('#'+sectionInfo.id).offset().top;
+			var headerHeight = $('div#links-container').height();
+			console.log('test: ' + headerHeight);
 	        $('html,body').stop().animate({
-	            scrollTop: offset - 10
+	            scrollTop: offset - headerHeight - 10
 	        }, 600, 'swing');
 		});
 
