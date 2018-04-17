@@ -43,8 +43,14 @@ createLink = function(section) {
 		var linkyBoi = $('<a>', {
 			'id':    sectionInfo.id + '-link',
 			'class': 'section-link',
-			'href':  '#' + sectionInfo.id,
 			'text':  sectionInfo.name
+		});
+
+		linkyBoi.click( function(){
+			var offset = $('#'+sectionInfo.id).offset().top;
+	        $('html,body').stop().animate({
+	            scrollTop: offset - 10
+	        }, 600, 'swing');
 		});
 
 		var listyBoi = $('<li>', {
@@ -78,3 +84,29 @@ runSectionTitleChecks = function(sectionInfo) {
 		console.warn(snarkyBoi);
 	}
 }
+
+
+
+/**
+ *  Simple function, just sets up the smooth scrolling between page sections
+ *   with out-of-the-box jQuery
+ **/
+// function initializeScrolling() {
+//     $('#cv-link').click( function() {
+//         $('html, body').stop().animate({
+//             scrollTop: $('#cv').offset().top + 20
+//         }, 600, 'swing');
+//     });
+//     $('#works-link').click( function() {
+//         $('html, body').stop().animate({
+//             scrollTop: $('#projects').offset().top + 20
+//         }, 600, 'swing');
+//     });
+//     $('#header-link').click( function() {
+//         $('html, body').stop().animate({
+//             scrollTop: $('#header').offset().top + 20
+//         }, 600, 'swing');
+//         $("#nav-bar").animate({paddingBottom: "25px"}, 600);
+//         $("#nav-bar").animate({paddingTop: "25px"}, 600);
+//     });
+// }
