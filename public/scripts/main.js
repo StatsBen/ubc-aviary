@@ -58,7 +58,8 @@ createLink = function(section) {
 			'class': 'section-link-list-element'
 		});
 
-		$('ul#links-list').append(listyBoi).append(linkyBoi);
+		listyBoi.append(linkyBoi);
+		$('ul#links-list').append(listyBoi);
 	}
 
 }
