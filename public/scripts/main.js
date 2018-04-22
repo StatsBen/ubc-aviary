@@ -49,7 +49,6 @@ createLink = function(section) {
 		linkyBoi.click( function(){
 			var offset = $('#'+sectionInfo.id).offset().top;
 			var headerHeight = $('div#links-container').height();
-			console.log('test: ' + headerHeight);
 	        $('html,body').stop().animate({
 	            scrollTop: offset - headerHeight - 10
 	        }, 600, 'swing');
@@ -84,6 +83,12 @@ runSectionTitleChecks = function(sectionInfo) {
 	if (sectionInfo.name.length > 10) {
 		snarkyBoi = 'Hm... ' + sectionInfo.name;
 		snarkyBoi +=  " is a pretty long name, don't you think?"
+		console.warn(snarkyBoi);
+	}
+	if (sectionInfo.name.split(' ').length > 1) {
+		snarkyBoi = 'Really? You needed more than one word to';
+		snarkyBoi += ' name ' + sectionInfo.name + '?';
+		snarkyBoi += " you're so extra!";
 		console.warn(snarkyBoi);
 	}
 }
