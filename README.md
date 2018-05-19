@@ -24,7 +24,30 @@ He generally knows everything about the Aviary always.
 
 ## Website Overview
 
-TODO
+### Section by Section:
+
+Looking at the website from top to bottom you'll find:
+
+- *Ribbon of Links*: These links are generated dynamically when the
+page loads in a user's web browser (so don't go looking for it in
+the source code). The `generateLinksFromSectionElements` function in
+`main.js` and the functions it calls are what generate the links, so
+if you're having trouble with them, start there!
+
+- *Banner Image*: There's nothing strange going on here, just some
+plain ol', vanilla HTML and CSS. Note, however, that the styles
+controlling how this image is rendered are uniquely associated with
+the element's ID (`header-image`), and you can find these styles in
+the `header-and-links.css` file.
+
+- *Twitter Embed*: OK, this is the one part of the website that's
+still a little jenky... But basically it's just an embedded Twitter
+feed where the number of Tweets is limited to 1, and the element is
+contained by a `div` element, the styling for which you can find in
+the `box-model.css` file. How the Tweets are generated based on RGP
+check-in's is still a mystery for me. Ask Corey for details!
+
+TODO !!! continue 
 
 ### Typography
 This site is using the 'Oxygen' font offered through Google Fonts.

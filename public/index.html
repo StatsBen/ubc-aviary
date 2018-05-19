@@ -49,17 +49,23 @@
 			</div>
 
 			<!-- Div element that will hold all the links once main.js is run -->
+			<!-- DO NOT DELETE -->
 			<div id="links-container">
 				<ul id="links-list"></ul>
 			</div>
 
 			<!-- Embedded Twitter window for tracking arrivals -->
-			<div class="section" name="Twitter Window" generateLink="false">
-				<!-- TODO -->
-				<p><a class="twitter-timeline" data-tweet-limit="1" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/aviaryclimbing"></a>
-					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</p>
-			</div>
+			<h2>Latest Arrivals</h2>
+			<div id="twitter-container">
+				<div id="twitter-inner">
+					<a class="twitter-timeline"
+					 data-lang="en"
+					 href="https://twitter.com/aviaryclimbing?ref_src=twsrc%5Etfw"
+					 data-tweet-limit="1"
+					 style="margin-top:50px;"
+					 width="500" height="100">Tweets by aviaryclimbing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				 </div>
+ 			</div>
 
 			<div class="section" name="About" generateLink="true">
 				<h2>About</h2>
