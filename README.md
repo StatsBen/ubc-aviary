@@ -47,7 +47,7 @@ contained by a `div` element, the styling for which you can find in
 the `box-model.css` file. How the Tweets are generated based on RGP
 check-in's is still a mystery for me. Ask Corey for details!
 
-TODO !!! continue 
+- *Content Sections*:
 
 ### Typography
 This site is using the 'Oxygen' font offered through Google Fonts.
@@ -127,6 +127,8 @@ _To be determined..._
 
 #### Deployment Checklist
 
-
+_Also coming soon..._
 
 ## Editing This Document (README.txt)
+
+_Also, also coming soon...._
