@@ -54,6 +54,11 @@ This site is using the 'Oxygen' font offered through Google Fonts.
 A link to this font is found in a `link` element in the site's
 `head`.
 
+### Brand Colours
+As far as I can tell, the Aviary Logo is a stylish flying carabiner, and the
+colours used in the logo are a sort of slate blue (`#3883BA`), and a bright
+yellow (`#E3DC07`).
+
 
 ## Editing The Sourcecode
 
