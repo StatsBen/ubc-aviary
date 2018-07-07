@@ -59,7 +59,8 @@ div#links-container ul li a {
 	position: relative;
 	float: none;
 	clear: both;
-	color: #dddddd;
+	color: #8DBFE2;
+	font-weight: 100;
 }
 
 div#links-container ul li a:hover {

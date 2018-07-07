@@ -9,22 +9,53 @@
 
 
 body {
-	font-size: 12pt;
-	font-family: 'Open Sans', sans-serif;
-	color: #333333;
+	font-size: 14pt;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #555555;
 }
 
 h2 {
 	font-size: 2em;
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 900;
-	color: #000000;
+	color: #085083;
 	border-bottom: thin solid #b5b5b5;
 }
 
 p {
 	font-size: 1em;
-	font-family: 'Open Sans', sans-serif;
-	color: #555555;
+	font-family: 'Open Sans', sans-serif;a
 	font-weight: 300;
+}
+
+ul {
+	line-height: 1.5em;
+}
+
+ul li ul {
+	padding-bottom: 1.5em;
+}
+
+em {
+	font-size: 1em;
+	font-weight: 900;
+	color: #333333;
+	text-decoration: none;
+	font-style: normal;
+}
+
+a {
+	color: #176DAA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #8DBFE2;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #176DAA;
+	text-decoration: none;
 }
