@@ -24,47 +24,84 @@ img#header-image {
 	width: 100%;
 }
 
-div#links-container {
-	display: block;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	z-index: 99999;
-	background: #222222;
-}
-
-div#links-container ul {
+div#header-container {
 	display: block;
 	position: relative;
 	float: none;
-	clear: both;
 	width: 100%;
-	margin: 0 35px 0 30px;
+	margin: 40px 0 0 0;
 	padding: 0;
-	overflow: hidden;
+	background: #000000;
 }
 
-div#links-container ul li {
+div#header-image-container {
+	display: block;
+	position: absolute;
+	float: right;
+	width: 100%;
+	height: 500px;
+	overflow: visible;
+	background-image: url("./../resources/final-aviary-biner.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: left center;
+	background-repeat: repeat;
+	opacity: 0.1;
+}
+
+div#header-title-text-container {
 	display: block;
 	position: relative;
 	float: left;
-	margin: 10px 10px 10px 15px;
+	width: 50%;
+	height: 500px;
+	overflow: visible;
 }
 
-div#links-container ul li a {
+span#header-title-text {
+	position: absolute;
+	margin: 50px 0 0 20%;
+	font-family: 'Oxygen', 'Helvetica', sans-serif;
+	font-size: 8em;
+	font-weight: 900;
+	color: #E3DC07;
+	text-shadow: 1px 3px 0px #3883BA,
+							 2px 3px 0px #3883BA,
+							 3px 1px 0px #3883BA,
+							 3px 2px 0px #3883BA,
+							 3px 3px 0px #3883BA,
+							 -1px -3px 0px #3883BA,
+						 	 -2px -3px 0px #3883BA,
+						 	 -3px -1px 0px #3883BA,
+						 	 -3px -2px 0px #3883BA,
+						 	 -3px -3px 0px #3883BA,
+							 1px -3px 0px #3883BA,
+						 	 2px -3px 0px #3883BA,
+						 	 3px -1px 0px #3883BA,
+						 	 3px -2px 0px #3883BA,
+						 	 3px -3px 0px #3883BA,
+							 -1px 3px 0px #3883BA,
+						 	 -2px 3px 0px #3883BA,
+						 	 -3px 1px 0px #3883BA,
+						 	 -3px 2px 0px #3883BA,
+						 	 -3px 3px 0px #3883BA;
+	white-space: nowrap;
+}
+
+span#header-title-sub-text {
+	position: absolute;
+	margin: 250px 0 0 30%;
+	font-family: 'Raleway', 'Helvetica', sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+	color: #3883BA;
+	white-space: nowrap;
+}
+
+div#header-bottom-bar {
 	display: block;
 	position: relative;
 	float: none;
 	clear: both;
-	color: #8DBFE2;
-	font-weight: 100;
-}
-
-div#links-container ul li a:hover {
-	color: #ffffff;
-	text-shadow: 0px 0px 2px #444444;
-	cursor: pointer;
+	width: 100%;
 }

@@ -1,0 +1,53 @@
+/**
+ *
+ * This stylesheet controls all the one-off styles defining the site's
+ *  navigation bar that's fixed up at the top of the site.
+ *
+ * Author: Ben Clark - July. 2018
+ *
+ **/
+
+ div#links-container {
+ 	display: block;
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 0;
+ 	left: 0;
+ 	margin: 0;
+ 	padding: 0;
+ 	z-index: 99999;
+ 	background: #222222;
+ }
+
+ div#links-container ul {
+ 	display: block;
+ 	position: relative;
+ 	float: none;
+ 	clear: both;
+ 	width: 100%;
+ 	margin: 0 35px 0 30px;
+ 	padding: 0;
+ 	overflow: hidden;
+ }
+
+ div#links-container ul li {
+ 	display: block;
+ 	position: relative;
+ 	float: left;
+ 	margin: 10px 10px 10px 15px;
+ }
+
+ div#links-container ul li a {
+ 	display: block;
+ 	position: relative;
+ 	float: none;
+ 	clear: both;
+ 	color: #8DBFE2;
+ 	font-weight: 100;
+ }
+
+ div#links-container ul li a:hover {
+ 	color: #ffffff;
+ 	text-shadow: 0px 0px 2px #444444;
+ 	cursor: pointer;
+ }
