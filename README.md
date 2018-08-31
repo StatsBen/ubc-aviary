@@ -146,9 +146,9 @@ easy one-liner in the command line!
 
 1. First thing's first, *test your changes!!* Open up the `index.html` file
 in a browser on your computer, and make sure that:
- - the site appears as it should visually,
- - the command line in your browser's web development tools reports no errors,
- - and give everything a quick proof-read out loud to catch errors :) (pro-tip).
+   - the site appears as it should visually,
+   - the command line in your browser's web development tools reports no errors,
+   - and give everything a quick proof-read out loud to catch errors :) (pro-tip).
 2. Once you've made sure your changes work, use Git to commit your changes with
 a useful message. Then, push these changes to the remote repository, and
 ensure that no errors have been reported in the process. If errors are produced
