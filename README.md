@@ -142,6 +142,13 @@ website of this size (you're charged for what you use in Firebase), and also
 because it allows us to quickly and conveniently deploy new changes with an
 easy one-liner in the command line!
 
+Deploying with Firebase requires first installing the Firebase CLI (Command Line 
+Interface), which requires Node.js and npm, which are available at https://nodejs.org
+
+Once you have Node.js and npm, you can install the Firebase CLI via npm:
+
+`npm install -g firebase-tools`
+
 #### Deployment Checklist
 
 1. First thing's first, *test your changes!!* Open up the `index.html` file
