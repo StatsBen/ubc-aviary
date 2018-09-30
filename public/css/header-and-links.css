@@ -42,13 +42,18 @@ div#header-image-container {
 	height: 700px;
 	overflow: visible;
 	background-image: url("./../resources/banner-1-min.jpg");
+	-webkit-background-attachment: fixed;
+	-moz-background-attachment: fixed;
+	-o-background-attachment: fixed;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 	background-size: cover;
+	-webkit-background-position: center center;
+	-moz-background-position: center center;
+	-o-background-position: center center;
 	background-position: center center;
-	background-repeat: repeat;
 	opacity: 0.5;
 }
 
