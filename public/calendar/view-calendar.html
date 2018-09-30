@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<!--
+
+            @@@@*         @@&@@
+          %@    *@      *@.    @@
+         @&       @@@@@@@       #@@@@@@@@@@@@@@@@@@
+        &&        &@(@.@.             @@@@   @@@@   @@*
+@@@@%,/@                          ,(&&(              .@@
+      @      @@     @    @@     (                      ,@,          @@@@
+@@%%%@(      @@   @@@@@  @@    @@@&&&&                  @#       @@@@@@@
+    ,@                                                    @#    %@...%@@,
+   @(                                                     @* @@@@@*.%@
+   @                                                      .@@...@@@@/
+  ,@                                                       @@@..@@*
+  %&                                                       @@@@*
+  %&                                                       @,
+  %&                                                      .@
+  ,@                                                      @%
+   @,                                                    /@
+    ,@                                                   .@
+     /@                                                 .@
+       @#                                              #@
+         @@.                                         .@(
+            @/ /@@@@@@@%  @@@@@@@@@@@@@@. &@@@@@@@. (@
+            @(_@%     /@_/@            @/_&%     @#_@%
+
+	- website by Ben Clark, with support from Pusheen-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="The UBC Aviary's public web page." />
+		<meta name="keywords" content="UBC, Aviary, Nest, AMS, Climbing, 'Rock Climbing', Gym, 'Climbing Gym'" />
+		<meta name="author" content="Ben Clark - Mar. 2018" />
+		<title>UBC Aviary</title>
+		<link rel="stylesheet" type="text/css" href="css/typography.css" />
+		<link rel="stylesheet" type="text/css" href="css/box-model.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
+		<link rel="stylesheet" type="text/css" href="css/header-and-links.css" />
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:700|Raleway:400,700" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<!-- RGP Calendar Widget - Linked to the Aviary's RGP Calendar! -->
+		<!-- This code is written and maintained by the RGP team, not the Aviary,
+		     for support, see the RGP help docs. -->
+    <script>
+
+
+			// third party cookies within iframe on safari - redirect fix
+			try {
+			    var cookiename='rgpsafariiframefix';
+			    var cookievalue='TRUST';
+			    var isSafariOnMac =
+			        navigator.userAgent.indexOf('Safari') != -1 && // SAFARI = yes
+			        navigator.userAgent.indexOf('Macintosh') != -1 && // MACINTOSH = yes
+			        navigator.userAgent.indexOf('Chrome') == -1 && // CHROME = NO
+			        navigator.userAgent.indexOf('Mobile') == -1 && // MOBILE = NO (since it opens a new tab)
+			        navigator.userAgent.indexOf('Windows ') == -1; // WINDOWS = NO (note extra space)
+			    if (isSafariOnMac) {
+			        var alreadyfixed = document.cookie.indexOf(cookiename+"="+cookievalue)>-1;
+			        // make sure cookies exist
+			        document.cookie="rgptestcookie"
+			        cookiesEnabled=(document.cookie.indexOf("rgptestcookie")!=-1)? true : false;
+			        if (navigator.cookieEnabled && cookiesEnabled && !alreadyfixed) {
+			            var d = new Date();
+			            d.setTime(d.getTime() + (24*60*60*365));
+			            var expires = "expires="+ d.toUTCString();
+			            document.cookie = cookiename + "=" + cookievalue + ";" + expires + ";path=/";
+			            firstscript = document.getElementsByTagName('script')[0];
+			            fixscriptjs = document.createElement('script');
+			            fixscriptjs.src = 'https://app.rockgympro.com/js/iframecookiefix.js.php';
+			            firstscript.parentNode.insertBefore(fixscriptjs, firstscript);
+			        }
+			    }
+			} catch (err)
+			{
+			}
+
+
+			var __rgpModalAlreadyLoaded = false;
+
+			function __isIE9OrLess() {
+			    try {
+			        if (document.addEventListener  ) {
+			            return false;
+			        } else {
+			            return true;
+			        }
+			    } catch (err) {
+			        return true
+			    }
+			}
+
+			function __isOKToRedirect() {
+			    try {
+			       tag = document.getElementById("rgp_never_redirect_script_id")
+			        if (tag) {
+			            return false;
+			        }
+			    }
+			    catch (err) {
+			    }
+			    return true;
+			}
+
+			function __isMobileDevice() {
+			    // no mobile mode for now
+			    if (navigator.userAgent.match(/Android/i)
+			    || navigator.userAgent.match(/iPhone/i)
+			    || navigator.userAgent.match(/iPod/i)
+			    || navigator.userAgent.match(/BlackBerry/i)
+			    ) {
+			        return true;
+			    }
+			    return false;
+			}
+
+			function __isSmallScreen() {
+
+
+			    try {
+			        var width = window.innerWidth;
+			        if (width<=700) {
+			            return true;
+			        }
+			    } catch (err) {
+			        return false;
+			    }
+			    return false;
+			}
+
+			function __redirectToMobile() {
+			    window.location="https://app.rockgympro.com/b/widget/?a=calendar&&widget_guid=ecb12c7d0e864b989006c6f6ebd22539&random=5bb1298867804&iframeid=&mode=e&lang=english";
+			}
+
+			function __makebutton() {
+			document.write("<a href='https://app.rockgympro.com/b/widget/?a=calendar&&widget_guid=ecb12c7d0e864b989006c6f6ebd22539&random=5bb1298867804&iframeid=&mode=e&lang=english&want_biz_title'style='-webkit-border-radius: 10;-moz-border-radius: 10;border-radius: 10px;color: #ffffff;background-color: blue;font-size: 25px;padding: 10px 20px 10px 20px;text-decoration: none;display:inline-block;margin:20px;'target='_blank'>Click to Book Now</a>");
+			}
+
+
+			function __iframergpiframe5bb12988678c5yoffset() {
+			    var curleft=0;
+			    var curtop=0;
+			    var obj = document.getElementById('rgpiframe5bb12988678c5');
+			    do {
+			        curleft += obj.offsetLeft;
+			        curtop += obj.offsetTop;
+			    } while (obj = obj.offsetParent);
+			    return curtop;
+			}
+
+			function __makergpiframergpiframe5bb12988678c5() {
+			    try {
+			        if (document.getElementById("rgp-iframe-spinner")) {
+			            document.write("<div><br/><b><em>Error: Only one embedded booking widget is allowed per page.</em></b><br/></div>");
+			            return;
+			        }
+			        document.write("<div>");
+			        document.write("<div id='rgp-iframe-spinner' style='display:block; position: absolute; '><img src='https://app.rockgympro.com/b/widget/img/ajax-loader.gif'/></div>");
+			        document.write("<iframe id='rgpiframe5bb12988678c5' src='https://app.rockgympro.com/b/widget/?a=calendar&&widget_guid=ecb12c7d0e864b989006c6f6ebd22539&random=5bb1298867804&iframeid=&mode=e&lang=english&iframeid=rgpiframe5bb12988678c5' width=100% height=50 scrolling='no' style='border:0px;'></iframe>");
+			        document.write("</div>")
+
+			        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+			        var eventer = window[eventMethod];
+			        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+			        eventer(messageEvent, function (e) {
+			            try {
+			                if (typeof e.data === 'string') {
+
+			                    var parts = e.data.split(",");
+
+			                    if (parts[0]=='rgpmessage-iframe-resize' && parts[2]=='rgpiframe5bb12988678c5')  {
+			                        document.getElementById('rgpiframe5bb12988678c5').style.height=parts[1]+"px";
+			                    }
+
+			                    if (parts[0]=='rgp-show-spinner') {
+			                                                     document.getElementById('rgp-iframe-spinner').style.display='block';
+			                                                                    }
+
+			                    if (parts[0]=='rgp-hide-spinner') {
+			                        document.getElementById('rgp-iframe-spinner').style.display='none';
+			                        var message = {'action': 'showspinner', 'state': 'hide'};
+			                        // ios
+			                        try {
+			                             window.webkit.messageHandlers.rgpro.postMessage(message);
+			                        } catch (ex) {
+			                        }
+			                        // android
+			                        try {
+			                            window.rgpro.message(JSON.stringify(message));
+			                        } catch (ex) {
+			                        }
+			                    }
+
+			                    if (parts[0]=='scroll_to_top_of_iframe' && parts[1]=='rgpiframe5bb12988678c5') {
+			                        var iframetop = __iframergpiframe5bb12988678c5yoffset();
+			                        if (window.pageYOffset>iframetop) {
+			                            window.scrollTo(0, iframetop-150);
+			                        }
+			                        return;
+			                    }
+
+			                    if (parts[0]=='scroll_to_position' && parts[1]=='rgpiframe5bb12988678c5') {
+			                        var offset = parseInt(parts[2]);
+			                        var iframetop = __iframergpiframe5bb12988678c5yoffset();;
+			                        // this is broken - need to fix
+			                        //window.scrollTo(0, iframetop-150+offset);
+			                        return;
+			                    }
+
+			                    if (parts[0]=='scroll_to_middle_of_iframe'  && parts[1]=='rgpiframe5bb12988678c5') {
+			                        var iframeheight = parseInt(parts[2]);
+			                        var iframetop = __iframergpiframe5bb12988678c5yoffset();
+			                        window.scrollTo(0, iframetop+iframeheight/2-window.innerHeight/2);
+			                        return;
+			                    }
+
+			                    if (parts[0]=='scroll_to_bottom_of_iframe'  && parts[1]=='rgpiframe5bb12988678c5') {
+			                        var iframeheight = parseInt(parts[2]);
+			                        var iframetop = __iframergpiframe5bb12988678c5yoffset();
+			                        window.scrollTo(0, iframetop+iframeheight-window.innerHeight);
+			                        return;
+			                    }
+
+			                    // rgpmessage-modal-open message is caught here ONCE so we can load the rgpmodal.js.php file
+
+			                    if (parts[0] == 'rgpmessage-modal-open') {
+			                        try {
+
+			                            // use global to only handle message here.   Once the .js file is loaded
+			                            // message will be handled by that library
+			                            if (__rgpModalAlreadyLoaded) {
+			                                return;
+			                            }
+			                            __rgpModalAlreadyLoaded=true;
+
+			                            document.getElementById('rgp-iframe-spinner').style.display='block';
+
+			                            // load the rgpmodal js library and set a callback when it is loaded
+			                            var rgp_modal_firstScript = document.getElementsByTagName('script')[0];
+			                            rgp_modal_firstScript_js = document.createElement('script');
+			                            rgp_modal_firstScript_js.addEventListener("load", function() {
+			                                        // once loaded, we need to parse the message and open the window via
+			                                        // a special function.  URL for popup is encoded in second park of message
+			                                        var parts = e.data.split(",");
+			                                        var popupurl= decodeURIComponent(parts[1]);
+			                                        __rgpModalOpenPopupAfterScriptLoad(popupurl,document.getElementById('rgpiframe5bb12988678c5').contentWindow);
+			                                        // hide spinner
+			                                        document.getElementById('rgp-iframe-spinner').style.display='none';
+			                            });
+			                            rgp_modal_firstScript_js.src = 'https://app.rockgympro.com/js/rgpmodal.js.php';
+			                            rgp_modal_firstScript.parentNode.insertBefore(rgp_modal_firstScript_js, rgp_modal_firstScript);
+
+			                            // sanity check to hide spinner at 5 seconds
+			                            setTimeout(function(){ document.getElementById('rgp-iframe-spinner').style.display='none';},5000);
+			                        } catch (err)
+			                        {
+			                        }
+			                    }
+			                }
+			            }// end try within eventer
+			            catch (err) {
+			            }
+			        }, false); // end eventer
+			    }
+			    catch (err) { //end try inside makergpframe
+			    }
+			}
+
+			if (__isIE9OrLess()) {
+			    __makebutton();
+			} else {
+			    if (__isMobileDevice() && __isSmallScreen() && __isOKToRedirect()) {
+			        __redirectToMobile();
+			    } else {
+			    __makergpiframergpiframe5bb12988678c5();
+			    }
+			}
+
+
+
+    </script>
+	</head>
+	<body>
