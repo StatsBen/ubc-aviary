@@ -150,9 +150,10 @@ in a browser on your computer, and make sure that:
    - the command line in your browser's web development tools reports no errors,
    - and give everything a quick proof-read out loud to catch errors :) (pro-tip).
 2. Once you've made sure your changes work, use Git to commit your changes with
-a useful message. Then, push these changes to the remote repository, and
-ensure that no errors have been reported in the process. If errors are produced
-in this process, resolve them before continuing.
+a useful message (this will probably look like `git commit -m "your message
+here"` in the command line). Then, push these changes to the remote repository,
+and ensure that no errors have been reported in the process. If errors are
+produced in this process, resolve them before continuing. 
 3. If the site runs as intended, and any Git errors are resolved, you're ready
 to deploy to Firebase! Open a command line, navigate to the `ubc-aviary`
 repository, and run `firebase deploy`. You may be prompted to log in during
