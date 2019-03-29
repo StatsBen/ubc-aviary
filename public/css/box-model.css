@@ -58,3 +58,20 @@ div#twitter-inner {
 	width: 600px;
 	margin: auto;
 }
+
+button.contact-button {
+	position: block;
+	float: left;
+	clear: both;
+	padding: 0.5em;
+	margin: 0.3em;
+	background: #cccccc;
+	box-shadow: inset 3px 3px 3px #aaaaaa;
+	border: thin solid #cfcfcf;
+	border-radius: 5px;
+}
+
+button.contact-button:hover {
+	background: #dddddd;
+	box-shadow: none;
+}
